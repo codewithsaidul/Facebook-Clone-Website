@@ -36,6 +36,7 @@ nav{
 .logo{
     width: 160px;
     margin-right: 45px;
+    cursor: pointer;
 }
 .nav-left, .nav-right{
     display: flex;
@@ -292,7 +293,7 @@ nav{
     margin-right: 10px;
 }
 .user-profile p{
-    margin-bottom: -5px;
+    margin-bottom: 5px;
     font-weight: 500;
     color: #626262;
 }
@@ -333,7 +334,7 @@ nav{
     border-radius: 6px;
     padding: 20px;
     color: #626262;
-    margin: 20px 0;
+    margin: 5px 0 20px;
 }
 .user-profile{
     font-size: 13px;
@@ -650,84 +651,29 @@ nav{
     left: 0;
 }
 
-@media screen and (max-width: 800px) {
-    body{
-        width: 90%;
-    }
-    .container{
-        width: 100%;
-    }
-    .main-content{
-        width: 95%;
-        margin: 0 0 0 30px;
-        align-items: flex-start;
-    }
-    .left-sidebar{
-        width: 0%;
-        visibility: hidden;
+
+/*================= Media Query For Home Page ===================*/
+@media screen and (max-width: 900px){
+    .left-sidebar,
+    .right-sidebar,
+    .search-box{
         display: none;
     }
-    .right-sidebar{
-        width: 0%;
-        visibility: hidden;
-        display: none;
+    nav{
+        flex-wrap: wrap;
+        padding: 0;
     }
     .logo{
         width: 80px;
         margin-right: 20px;
     }
-    .nav-left, .nav-right{
-        display: flex;
-        align-items: center;
+    .nav-left ul li img {
+        width: 20px;
+        margin: 0 4px;
     }
-    .nav-left ul li{
-        list-style: none;
-        display: inline-block;
-    }
-    .nav-left ul li img{
-        width: 15px;
-        margin: 0 5px;
-    }
-    .nav-user-icon img{
+    .nav-user-icon {
         width: 30px;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-    .nav-user-icon{
-        margin-left: 10px;
-    }
-    .search-box{
-        background: #efefef;
-        width: 150px;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        padding: 0 10px;
-    }
-    .search-box img{
-        width: 18px;
-    }
-    .search-box input{
-        width: 100%;
-        background: transparent;
-        padding: 15px;
-        outline: none;
-        border: 0;
-    }
-    .online{
-        position: relative;
-    }
-    .online::after{
-        content: '';
-        width: 7px;
-        height: 7px;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        background: #41db51;
-        position: absolute;
-        top: 0;
-        right: 0;
+        margin-left: -350px;
     }
    
-
 }
